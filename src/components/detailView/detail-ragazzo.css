@@ -1,0 +1,15 @@
+.Header-ragazzo {
+    width: 100%;
+    color: red;
+    border: 1px solid blue;
+}
+
+.Header-ragazzo h2 {
+    float: left;
+    padding-left: 15px;
+}
+.info-unita {
+    float: right;
+    padding-right: 15px;
+    text-align: right;
+}
