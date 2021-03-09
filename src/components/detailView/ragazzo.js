@@ -49,7 +49,7 @@ function ElencoSpecialita(props) {
     });
     return (
         <section className="row">
-            <h5>Specialità</h5>
+            <h3>Specialità</h3>
             {specs}
         </section>
     );
@@ -75,7 +75,7 @@ function ElencoMete(props) {
     });
     return (
         <section className="row">
-            <h5>Mete</h5>
+            <h3>Mete</h3>
             {mete}
         </section>
     );
@@ -89,8 +89,31 @@ function Meta(props) {
     console.log(esito);
     return (
         <div className={className}>
-            <p>{props.meta.testo}</p>
-            {esito}
+            <header className="meta-header">
+                <h4>{props.meta.testo}</h4>
+            </header>
+            <section className="meta-section">
+                <h4>Esito:</h4> <p>{esito}</p>
+            </section>
+            <MetaNote note={props.meta.note}></MetaNote>
         </div>
     );
+}
+
+function MetaNote(props) {
+    const note = [];
+    props.note.forEach((nota) => {
+        note.push(
+            <div className="meta-nota col-s-1-of-3">
+                <h5>Nota</h5>
+                {nota.testo ? (
+                    <p className="meta-nota-testo">{nota.testo}</p>
+                ) : null}
+                {nota.data ? (
+                    <p className="meta-nota-data">{nota.data}</p>
+                ) : null}
+            </div>
+        );
+    });
+    return <section className="meta-section row">{note}</section>;
 }

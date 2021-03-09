@@ -26,11 +26,34 @@
     background-color: #dddddd;
     color: #444;
 }
+.meta {
+    padding: 2%;
+    border-radius: 10px;
+}
+.meta-header,
+.meta-section {
+    border-bottom: 1px solid #333;
+}
+.meta-section:last-child {
+    border-bottom: none;
+}
 .meta-in-corso {
+    background-color: rgb(178, 201, 253);
+    border: 2px solid rgb(34, 95, 235);
 }
 .meta-successo {
+    background-color: #93ffc4;
+    border: 2px solid #07662f;
 }
 .meta-parziale {
+    background-color: #e5f8b7;
+    border: 2px solid #a79c08;
 }
 .meta-fallimento {
+    background-color: #f5aaa7;
+    border: 2px solid #9e0b00;
+}
+.meta-nota {
+    border: 1px solid #333;
+    border-radius: 10px;
 }

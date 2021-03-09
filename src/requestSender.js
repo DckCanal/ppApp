@@ -95,6 +95,9 @@ const RequestSender = {
                     "Buoni progressi nella squadriglia, ma ancora nei momenti di confronto e condivisione non parla a meno che non venga interpellato esplicitamente",
                   data: "05/02/2018",
                 },
+                {
+                  testo: "Attenzione al rapporto con Pietro!",
+                },
               ],
               impegni: [
                 {
@@ -129,9 +132,18 @@ const RequestSender = {
           cognome: "Bianchi",
           dataNascita: "21/04/2006",
           specialita: [
-            { nome: "Infermieristica", data: "12/12/2018" },
-            { nome: "Topografo", data: "12/03/2019" },
-            { nome: "Musico", data: "13/10/2020" },
+            {
+              nome: "Infermieristica",
+              dataConseguimento: "12/12/2018",
+              dataInizio: "8/9/2018",
+              stato: "completata",
+            },
+            {
+              nome: "Topografo",
+              dataConseguimento: "12/03/2019",
+              stato: "completata",
+            },
+            { nome: "Musico", dataInizio: "13/10/2020", stato: "in corso" },
           ],
           unita: {
             branca: "Reparto",
