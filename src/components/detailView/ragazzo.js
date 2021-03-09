@@ -81,13 +81,14 @@ function ElencoMete(props) {
     );
 }
 function Meta(props) {
-    const className = !props.meta.esito
-        ? "meta-in-corso"
-        : `meta-${props.meta.esito.stato}`;
+    let className =
+        (!props.meta.esito
+            ? "meta-in-corso"
+            : `meta-${props.meta.esito.stato}`) + " row meta";
     const esito = props.meta.esito ? <p>{props.meta.esito.commento}</p> : null;
     console.log(esito);
     return (
-        <div className="row meta">
+        <div className={className}>
             <p>{props.meta.testo}</p>
             {esito}
         </div>
