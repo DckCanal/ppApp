@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "./grid.css";
 import RequestSender from "./requestSender";
-import { DettaglioRagazzo } from "./components/detailView/ragazzo";
+import { DettaglioRagazzo } from "./components/ragazzo/ragazzo";
 
 function App() {
   const ragazzi = RequestSender.getGroupInfo().ragazzi;

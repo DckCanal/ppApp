@@ -1,0 +1,13 @@
+.specialita {
+    padding: 5px 5px;
+    text-align: center;
+    /* height: max-content; */
+}
+.specialita-completata {
+    background-color: #93ffc4;
+    color: #074925;
+}
+.specialita-in-corso {
+    background-color: #dddddd;
+    color: #444;
+}

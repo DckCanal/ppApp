@@ -5,18 +5,13 @@
 }
 
 .Header-ragazzo .nome-ragazzo {
-    /* float: left; */
-    /* padding-left: 15px; */
 }
 .info-unita {
-    /* float: right; */
     padding-right: 15px;
-    /* text-align: right; */
 }
-.specialita {
+/* .specialita {
     padding: 5px 5px;
     text-align: center;
-    /* height: max-content; */
 }
 .specialita-completata {
     background-color: #93ffc4;
@@ -25,8 +20,8 @@
 .specialita-in-corso {
     background-color: #dddddd;
     color: #444;
-}
-.meta {
+} */
+/*.meta {
     padding: 2%;
     border-radius: 10px;
 }
@@ -56,4 +51,4 @@
 .meta-nota {
     border: 1px solid #333;
     border-radius: 10px;
-}
+} */
