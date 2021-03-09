@@ -1,0 +1,48 @@
+/* -------------------------------
+   ------ GRID SYSTEM ------------
+   ------------------------------- */
+
+/* --- MOBILE FIRST --- */
+.row {
+  padding: 0 1.5%;
+  width: 100%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  width: 100%;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .col-s-1-of-8 {
+    margin-right: 1.6%;
+    width: 12.5%;
+    float: left;
+  }
+  .col-s-left {
+    float: left;
+    text-align: left;
+    width: auto;
+  }
+  .col-s-right {
+    float: right;
+    text-align: right;
+    width: auto;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .row {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}

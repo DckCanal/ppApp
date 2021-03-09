@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "./grid.css";
 import RequestSender from "./requestSender";
-import { HeaderRagazzo } from "./components/detailView/ragazzo";
+import { DettaglioRagazzo } from "./components/detailView/ragazzo";
 
 function App() {
   const ragazzi = RequestSender.getGroupInfo().ragazzi;
@@ -24,7 +25,7 @@ function App() {
         <p>{RequestSender.getGroupInfo().nome}</p> */}
       </header>
       <main>
-        <HeaderRagazzo ragazzo={ragazzi[1]}></HeaderRagazzo>
+        <DettaglioRagazzo ragazzo={ragazzi[0]}></DettaglioRagazzo>
       </main>
     </div>
   );

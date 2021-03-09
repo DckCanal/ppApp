@@ -4,12 +4,33 @@
     border: 1px solid blue;
 }
 
-.Header-ragazzo h2 {
-    float: left;
-    padding-left: 15px;
+.Header-ragazzo .nome-ragazzo {
+    /* float: left; */
+    /* padding-left: 15px; */
 }
 .info-unita {
-    float: right;
+    /* float: right; */
     padding-right: 15px;
-    text-align: right;
+    /* text-align: right; */
+}
+.specialita {
+    padding: 5px 5px;
+    text-align: center;
+    /* height: max-content; */
+}
+.specialita-completata {
+    background-color: #93ffc4;
+    color: #074925;
+}
+.specialita-in-corso {
+    background-color: #dddddd;
+    color: #444;
+}
+.meta-in-corso {
+}
+.meta-successo {
+}
+.meta-parziale {
+}
+.meta-fallimento {
 }

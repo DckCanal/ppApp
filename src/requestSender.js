@@ -31,9 +31,22 @@ const RequestSender = {
           cognome: "Rossi",
           dataNascita: "04/03/2005",
           specialita: [
-            { nome: "Maestro dei nodi", data: "12/12/2018" },
-            { nome: "Amico degli animali", data: "25/07/2020" },
-            { nome: "Infermieristica", data: "13/10/2020" },
+            {
+              nome: "Maestro dei nodi",
+              dataInizio: "07/10/2018",
+              dataConseguimento: "12/12/2018",
+              stato: "completata",
+            },
+            {
+              nome: "Amico degli animali",
+              dataConseguimento: "25/07/2020",
+              stato: "completata",
+            },
+            {
+              nome: "Infermieristica",
+              dataInizio: "13/10/2020",
+              stato: "in corso",
+            },
           ],
           unita: {
             branca: "Reparto",
